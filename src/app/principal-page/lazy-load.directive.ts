@@ -4,6 +4,7 @@ import { Directive, ElementRef, HostListener, Output, EventEmitter } from '@angu
   selector: '[appLazyLoad]'
 })
 export class LazyLoadDirective {
+  
   @Output() appLazyLoad = new EventEmitter<void>();
 
   constructor(private el: ElementRef) {}

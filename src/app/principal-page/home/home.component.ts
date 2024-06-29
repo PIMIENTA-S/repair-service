@@ -22,14 +22,6 @@ export class HomeComponent implements OnInit{
     private router: Router,
   ){}
 
-  ngOnInit(): void {
-    this.facilities = this.serviceService.getServicesHome();
-  }
-
-  viewDetails(service: Service): void {
-    this.router.navigate(['/service-detail', service.name]);
-  }
-
   section1Loaded = false;
   section2Loaded = false;
   section3Loaded = false;
@@ -37,31 +29,64 @@ export class HomeComponent implements OnInit{
   section5Loaded = false;
   section6Loaded = false;
 
-  loadContent(section: string) {
-    setTimeout(() => {
-      switch (section) {
-        case 'section1':
-          this.section1Loaded = true;
-          break;
-        case 'section2':
-          this.section2Loaded = true;
-          break;
-        case 'section3':
-          this.section3Loaded = true;
-          break;
-        case 'section4':
-          this.section4Loaded = true;
-          break;
-        case 'section5':
-          this.section5Loaded = true;
-          break;
-        case 'section6':
-          this.section6Loaded = true;
-          break;
-        default:
-          break;
-      }
-    }, 500); // Simulación de carga diferida
+  ngOnInit(): void {
+    this.facilities = this.serviceService.getServicesHome();
+    setTimeout(() => this.section1Loaded = true, 500);
+    setTimeout(() => this.section2Loaded = true, 1000);
+    setTimeout(() => this.section3Loaded = true, 2000);
+    setTimeout(() => this.section4Loaded = true, 2000);
+    setTimeout(() => this.section5Loaded = true, 2500);
+    setTimeout(() => this.section6Loaded = true, 3000);
   }
 
+  loadContent(section: string) {
+    switch(section) {
+      case 'section2':
+        this.section2Loaded = true;
+        break;
+      case 'section3':
+        this.section3Loaded = true;
+        break;
+      case 'section4':
+        this.section4Loaded = true;
+        break;
+      case 'section5':
+        this.section5Loaded = true;
+        break;
+      case 'section6':
+        this.section6Loaded = true;
+        break;
+    }
+  }
+
+  viewDetails(service: Service): void {
+    this.router.navigate(['/service-detail', service.name]);
+  }
+
+
+  // loadContent(section: string) {
+  //   setTimeout(() => {
+  //     switch (section) {
+  //       case 'section1':
+  //         this.section1Loaded = true;
+  //         break;
+  //       case 'section2':
+  //         this.section2Loaded = true;
+  //         break;
+  //       case 'section3':
+  //         this.section3Loaded = true;
+  //         break;
+  //       case 'section4':
+  //         this.section4Loaded = true;
+  //         break;
+  //       case 'section5':
+  //         this.section5Loaded = true;
+  //         break;
+  //       case 'section6':
+  //         this.section6Loaded = true;
+  //         break;
+  //       default:
+  //         break;
+  //     }
+  //   }, 500); // Simulación de carga diferida
 }
