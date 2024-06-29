@@ -1,64 +1,59 @@
 <section class="content">
-    <div class="text-box">
-        <h1>Center Repair Electronics</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ipsam non ut iure sunt porro perspiciatis libero debitis voluptatum ipsum nemo eum itaque, laboriosam magnam <br> autem labore, nihil voluptates tempore.</p>
-        <a href="#contact" class="btn-know" > Consultar </a>
+    <div class="text-box hidden" appLazyLoad (appLazyLoad)="loadContent('section1')" [class.loaded]="section1Loaded" [ngClass]="{'animate__animated': section1Loaded, 'animate__fadeInUp': section1Loaded}">
+      <h1>Center Repair Electronics</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ipsam non ut iure sunt porro perspiciatis libero debitis voluptatum ipsum nemo eum itaque, laboriosam magnam <br> autem labore, nihil voluptates tempore.</p>
+      <a href="#contact" class="btn-know">Consultar</a>
     </div>
-</section>
-
-<!---------------------- segunda sección --------------------->
-
-<div class="col">
-    <h1> Servicio de repación </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia natus sequi unde vero fugit nam debitis quo, tempore sint saepe eos praesentium </p>
+  </section>
+  
+  <!-- Segunda sección -->
+  <div class="col hidden" appLazyLoad (appLazyLoad)="loadContent('section2')" [class.loaded]="section2Loaded" [ngClass]="{'animate__animated': section2Loaded, 'animate__fadeInLeft': section2Loaded}">
+    <h1>Servicio de reparación</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia natus sequi unde vero fugit nam debitis quo, tempore sint saepe eos praesentium</p>
     
     <div class="row">
-        <div class="service-col">
-            <h3>Reprogramación de centralitas</h3>
-            <img src="assets/centralitas.png" alt="">
-            <p>Consultar acerca de los problemas o fallas mas frecuentes en la programación de centralitas.</p>
-            <button routerLink="/services" class="button">Ver más</button>
-        </div>
-        
-        <div class="service-col">
-            <h3>Reparación de centralitas</h3>
-            <img src="assets/archivo.png" alt="">
-            <p>Consultar acerca de las fallas comunes en que se pueden producir en centralitas.</p>
-            <button routerLink="/services" class="button">Ver más</button>
-        </div>
-        
-        <div class="service-col">
-            <h3>Reparación cuadro de instrumentos</h3>
-            <img src="assets/cuadro.png" alt="">
-            <p>Consultar acerca de los inconvenientes habituales o especificos con el tablero de instrumentos.</p>
-            <button routerLink="/services" class="button">Ver más</button>
-        </div>
+      <div class="service-col">
+        <h3>Reprogramación de centralitas</h3>
+        <img src="assets/centralitas.png" alt="">
+        <p>Consultar acerca de los problemas o fallas más frecuentes en la programación de centralitas.</p>
+        <button routerLink="/services" class="button">Ver más</button>
+      </div>
+      
+      <div class="service-col">
+        <h3>Reparación de centralitas</h3>
+        <img src="assets/archivo.png" alt="">
+        <p>Consultar acerca de las fallas comunes en que se pueden producir en centralitas.</p>
+        <button routerLink="/services" class="button">Ver más</button>
+      </div>
+      
+      <div class="service-col">
+        <h3>Reparación cuadro de instrumentos</h3>
+        <img src="assets/cuadro.png" alt="">
+        <p>Consultar acerca de los inconvenientes habituales o específicos con el tablero de instrumentos.</p>
+        <button routerLink="/services" class="button">Ver más</button>
+      </div>
     </div>
-</div>
-
-<!---------------- Tercera Sección (Reparaciones) ----------------->
-
-<div class="col">
+  </div>
+  
+  <!-- Tercera Sección (Reparaciones) -->
+  <div class="col hidden" appLazyLoad (appLazyLoad)="loadContent('section3')" [class.loaded]="section3Loaded" [ngClass]="{'animate__animated': section3Loaded, 'animate__fadeInRight': section3Loaded}">
     <h1>Reparaciones Destacadas</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ipsa a beatae eligendi veniam quis harum ea facere vitae ipsam repreh</p>
     
-    <!-- <app-services></app-services> -->
     <div class="repair-container">
-        <div class="repair-col" *ngFor="let facilite of facilities" (click)="viewDetails(facilite)">
-            <img [src]="facilite.image">
-            <h3> {{facilite.name}} </h3>
-        </div>
+      <div class="repair-col" *ngFor="let facilite of facilities" (click)="viewDetails(facilite)">
+        <img [src]="facilite.image">
+        <h3>{{facilite.name}}</h3>
+      </div>
     </div>
-</div>
-
-<!------------------------ Cuarta Sección -------------------- -->
-
-<share-info id="contact"></share-info>
-
-<!-------------------------- Quinta Seccion---------------------->
-
-<shared-services></shared-services>
-
-<!-------------------------- Sexta Seccion --------------------->
-
-<shared-testimonials></shared-testimonials>
+  </div>
+  
+  <!-- Cuarta Sección -->
+  <share-info id="contact" class="hidden" appLazyLoad (appLazyLoad)="loadContent('section4')" [class.loaded]="section4Loaded" [ngClass]="{'animate__animated': section4Loaded, 'animate__fadeInDown': section4Loaded}"></share-info>
+  
+  <!-- Quinta Sección -->
+  <shared-services class="hidden" appLazyLoad (appLazyLoad)="loadContent('section5')" [class.loaded]="section5Loaded" [ngClass]="{'animate__animated': section5Loaded, 'animate__fadeInUp': section5Loaded}"></shared-services>
+  
+  <!-- Sexta Sección -->
+  <shared-testimonials class="hidden" appLazyLoad (appLazyLoad)="loadContent('section6')" [class.loaded]="section6Loaded" [ngClass]="{'animate__animated': section6Loaded, 'animate__bounceIn': section6Loaded}"></shared-testimonials>
+  
