@@ -62,31 +62,4 @@ export class HomeComponent implements OnInit{
   viewDetails(service: Service): void {
     this.router.navigate(['/service-detail', service.name]);
   }
-
-
-  // loadContent(section: string) {
-  //   setTimeout(() => {
-  //     switch (section) {
-  //       case 'section1':
-  //         this.section1Loaded = true;
-  //         break;
-  //       case 'section2':
-  //         this.section2Loaded = true;
-  //         break;
-  //       case 'section3':
-  //         this.section3Loaded = true;
-  //         break;
-  //       case 'section4':
-  //         this.section4Loaded = true;
-  //         break;
-  //       case 'section5':
-  //         this.section5Loaded = true;
-  //         break;
-  //       case 'section6':
-  //         this.section6Loaded = true;
-  //         break;
-  //       default:
-  //         break;
-  //     }
-  //   }, 500); // Simulación de carga diferida
 }

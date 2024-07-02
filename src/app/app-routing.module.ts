@@ -17,9 +17,6 @@ const routes: Routes = [
   // {path: '', redirectTo: '/services', pathMatch: 'full' },
   {path: '**', component: NotFoundComponent},
   
-
-
-  // { path: 'repair-center', loadChildren: () => import('./repair-center/repair-center.module').then(m => m.RepairCenterModule) }
 ];
 
 @NgModule({
