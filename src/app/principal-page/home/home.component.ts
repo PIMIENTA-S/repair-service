@@ -59,6 +59,24 @@ export class HomeComponent implements OnInit{
     }
   }
 
+  services = [
+    {
+      title: 'Reprogramación de centralitas',
+      img: 'assets/centralitas.png',
+      text: 'Consultar acerca de los problemas o fallas más frecuentes en la programación de centralitas.'
+    },
+    {
+      title: 'Reparación de centralitas',
+      img: 'assets/archivo.png',
+      text: 'Consultar acerca de las fallas comunes en que se pueden producir en centralitas.'
+    },
+    {
+      title: 'Reparación cuadro de instrumentos',
+      img: 'assets/cuadro.png',
+      text: 'Consultar acerca de los inconvenientes habituales o específicos con el tablero de instrumentos.'
+    }
+  ];
+
   viewDetails(service: Service): void {
     this.router.navigate(['/service-detail', service.name]);
   }
