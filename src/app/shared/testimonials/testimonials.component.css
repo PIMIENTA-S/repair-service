@@ -1,4 +1,4 @@
-
+/* 
 .testimonials{
     display: flex;
     flex-direction: column;
@@ -118,4 +118,11 @@
         font-size: 1.4rem;
     }
     
-}
+} */
+
+.testimonials .head span {
+    font-size: 1.3rem;
+    color: #252525;
+    letter-spacing: 2px;
+  }
+  

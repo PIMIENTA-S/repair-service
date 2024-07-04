@@ -1,124 +1,29 @@
-<div class="testimonials">
-    <div class="head">
-        <span>Comentarios</span>
-        <h1>Clientes Atendidos</h1>
+<div class="testimonials container text-center my-5">
+    <div class="head mb-4">
+      <span class="text-uppercase">Comentarios</span>
+      <h1 class="display-4 bg-danger text-white py-2">Clientes Atendidos</h1>
     </div>
-
-    <div class="body-container">
-        <!-- box 1 -->
-        <div class="testimonials-box">
-            <div class="one">
-                <!-- profile -->
-                <div class="top">
-                    <!-- img -->
-                    <div class="img">
-                        <img src="assets/comments/c-1.jpg" alt="">
-                    </div>
-                    <!-- user and name -->
-                    <div class="user">
-                        <strong>David Sanchez</strong>
-                        <span>&#64;sanchez1vid</span>
-                    </div>
-                </div>
-                <div class="review">
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                </div>
+  
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4" *ngFor="let comment of comments">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <div class="img mr-3">
+                <img src="{{ comment.img }}" alt="" class="rounded-circle" width="50" height="50">
+              </div>
+              <div>
+                <strong class="d-block">{{ comment.name }}</strong>
+                <span class="text-muted">&#64;{{ comment.username }}</span>
+              </div>
             </div>
-
-            <div class="comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod incidunt tempore cupiditate delectus perferendis fugit culpa optio! Reiciendis qui possimus maiores magni eius, inventore ipsa soluta odit eaque ullam.</p>
+            <div class="review text-warning mb-3">
+              <fa-icon [icon]="icon.faStar" *ngFor="let star of [].constructor(5)"></fa-icon>
             </div>
+            <p class="text-muted">{{ comment.text }}</p>
+          </div>
         </div>
-
-        <!-- box 2 -->
-        <div class="testimonials-box">
-            <div class="one">
-                <!-- profile -->
-                <div class="top">
-                    <!-- img -->
-                    <div class="img">
-                        <img src="assets/comments/c-2.jpg" alt="">
-                    </div>
-                    <!-- user and name -->
-                    <div class="user">
-                        <strong>David Sanchez</strong>
-                        <span>&#64;sanchez1vid</span>
-                    </div>
-                </div>
-                <div class="review">
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                </div>
-            </div>
-
-            <div class="comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod incidunt tempore cupiditate delectus perferendis fugit culpa optio! Reiciendis qui possimus maiores magni eius, inventore ipsa soluta odit eaque ullam.</p>
-            </div>
-        </div>
-
-        <!-- box 3 -->
-        <div class="testimonials-box">
-            <div class="one">
-                <!-- profile -->
-                <div class="top">
-                    <!-- img -->
-                    <div class="img">
-                        <img src="assets/comments/c-3.jpg" alt="">
-                    </div>
-                    <!-- user and name -->
-                    <div class="user">
-                        <strong>David Sanchez</strong>
-                        <span>&#64;sanchez1vid</span>
-                    </div>
-                </div>
-                <div class="review">
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                </div>
-            </div>
-
-            <div class="comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod incidunt tempore cupiditate delectus perferendis fugit culpa optio! Reiciendis qui possimus maiores magni eius, inventore ipsa soluta odit eaque ullam.</p>
-            </div>
-        </div>
-
-        <!-- box 4 -->
-        <div class="testimonials-box">
-            <div class="one">
-                <!-- profile -->
-                <div class="top">
-                    <!-- img -->
-                    <div class="img">
-                        <img src="assets/comments/c-4.jpg" alt="">
-                    </div>
-                    <!-- user and name -->
-                    <div class="user">
-                        <strong>David Sanchez</strong>
-                        <span>&#64;sanchez1vid</span>
-                    </div>
-                </div>
-                <div class="review">
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                    <fa-icon [icon]="icon.faStar"></fa-icon>
-                </div>
-            </div>
-
-            <div class="comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quod incidunt tempore cupiditate delectus perferendis fugit culpa optio! Reiciendis qui possimus maiores magni eius, inventore ipsa soluta odit eaque ullam.</p>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+  
