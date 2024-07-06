@@ -4,7 +4,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'shared-testimonials',
   templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.css'
+  styles: `
+  .testimonials .head span {
+    font-size: 1.3rem;
+    color: #252525;
+    letter-spacing: 2px;
+  }
+  `
 })
 export class TestimonialsComponent {
   icon = icon;
