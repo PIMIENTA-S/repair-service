@@ -1,53 +1,15 @@
 .contact {
-    text-align: center;
     background: #212528;
     color: #fff;
     padding: 10px;
 }
 
-.entire {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-}
-
-.entire .info-box div{
-    padding: 10px;
-}
-
-.entire .info-box a{
-    color: #25D366;
-}
-
-.info-box, .msj {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 20px;
-}
-
-.info-box p {
-    font-size: 20px;
-}
-
-.msj img {
-    width: 100px; 
-    height: auto;
-}
-
 .msj button {
-    margin-top: 10px;
     padding: 17px 25px;
-    border: none;
     font-weight: bold;
-    background-color: #25D366;
-    color: white;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s;
     width: 200px;
+    transition: 0.5s;
 }
 
 .msj button:hover {
@@ -56,12 +18,8 @@
     transform: scale(1.1);
 }
 
-.fa-icon {
-    margin-right: 8px;
-}
-
-@media(max-width: 700px){
-    .entire{
+@media (max-width: 700px) {
+    .entire {
         flex-direction: column;
         gap: 15px;
     }
