@@ -96,3 +96,19 @@
 .service-detail button:hover {
   background: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .service-detail {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info-box, .consultation-box {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-box {
+    margin-bottom: 10px;
+  }
+}
