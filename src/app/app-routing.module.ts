@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './principal-page/home/home.component';
 import { AboutComponent } from './principal-page/about/about.component';
@@ -14,10 +14,14 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'services', component: ServicesComponent },
   {path: 'service-detail/:name', component: ServiceDetailComponent},
-  // {path: '', redirectTo: '/services', pathMatch: 'full' },
   {path: '**', component: NotFoundComponent},
   
 ];
+
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+};
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
