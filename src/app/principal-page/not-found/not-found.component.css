@@ -1,40 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-
-.container {
-    text-align: center;
-    height: 55vh;
-    margin-top: 60px;
-}
-
-.error-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.error-code {
-    font-size: 100px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.error-code span {
-    font-size: 100px;
-    color: #4a90e2;
+.vh-80 {
+    height: 63vh;
 }
 
 .icon {
-    position: relative;
     width: 80px;
     height: 100px;
 }
@@ -42,32 +10,13 @@ body {
 .face {
     width: 80px;
     height: 80px;
-    background-color: #000;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.face::before {
-    content: 'O';
-    font-size: 70px;
-    color: #fff;
 }
 
 .person {
-    position: absolute;
     top: -40px;
     left: 10px;
     width: 60px;
     height: 60px;
-    background-color: #4a90e2;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .person::before {
@@ -77,35 +26,4 @@ body {
     background-color: #4a90e2;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.message {
-    margin-top: 20px;
-}
-
-.message h1 {
-    font-size: 24px;
-    color: #333;
-}
-
-.message p {
-    font-size: 16px;
-    color: #666;
-}
-
-.message a {
-    color: #4a90e2;
-    text-decoration: none;
-}
-
-.message button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
 }

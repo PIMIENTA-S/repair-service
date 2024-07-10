@@ -1,17 +1,19 @@
-<div class="container">
-    <div class="error-section">
-        <div class="error-code">
-            <span>4</span>
-            <div class="icon">
-                <div class="face"></div>
-                <div class="person"></div>
+<div class="d-flex vh-80 text-center justify-content-center align-items-center">
+    <div class="error-section d-block">
+        <div class="error-code d-flex align-items-center justify-content-center">
+            <span class="display-1 fw-bold text-primary">4</span>
+            <div class="icon position-relative">
+                <div class="face bg-dark rounded-circle d-flex justify-content-center align-items-center">
+                    <span class="text-white display-1">O</span>
+                </div>
+                <div class="person position-absolute bg-primary rounded-circle d-flex justify-content-center align-items-center"></div>
             </div>
-            <span>4</span>
+            <span class="display-1 fw-bold text-primary">4</span>
         </div>
-        <div class="message">
-            <h1>PAGE NOT FOUND</h1>
-            <p>Sorry can't find the page you are looking for. Click <a routerLink="/">Here</a> to come back to home page.</p>
-            <button (click)="goBack()">BACK</button>
+        <div class="message mt-3">
+            <h1 class="h4 text-dark">PAGE NOT FOUND</h1>
+            <p class="text-secondary">Sorry can't find the page you are looking for. Click <a routerLink="/" class="text-primary">Here</a> to come back to home page.</p>
+            <button (click)="goBack()" class="btn btn-dark mt-3">BACK</button>
         </div>
     </div>
 </div>
