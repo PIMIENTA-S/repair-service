@@ -28,4 +28,10 @@ export class ServiceDetailComponent implements OnInit {
   backToServices(): void {
     this.router.navigate(['/services']);
   }
+  redirectToWhatsApp() {
+    const message = `Hola, estoy interesado en más información sobre el componente ${this.service!.name}. Marca: ${this.service!.marca}, Modelo: ${this.service!.modelo}, Serie: ${this.service!.serie}, OEM: ${this.service!.oem}`;
+    const url = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+  
 }

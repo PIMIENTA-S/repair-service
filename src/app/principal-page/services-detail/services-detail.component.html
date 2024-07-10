@@ -1,4 +1,5 @@
 <div class="service-detail">
+  <div class="info-box">
     <img [src]="service!.image" class="img" alt="ECU image">
     <h1>{{service!.name}}</h1>
     <div class="detail-info">
@@ -17,10 +18,17 @@
       <label>OEM:</label>
       <span>{{service!.oem}}</span>
     </div>
+    <button (click)="backToServices()">Volver</button>
+  </div>
+  <div class="consultation-box">
+    <h3>¿Necesitas un presupuesto?</h3>
+    <p>Nos pondremos en contacto a la mayor brevedad para ayudarte a solucionar su avería.</p>
     <h2>Problemas frecuentes</h2>
     <ul>
       <li *ngFor="let problem of service!.problems">{{problem}}</li>
     </ul>
-    <button (click)="backToServices()">Volver</button>
+    <button class="whatsapp-button" (click)="redirectToWhatsApp()">Consultar por WhatsApp</button>
   </div>
-  
+</div>
+
+<shared-services class="m-5"></shared-services>

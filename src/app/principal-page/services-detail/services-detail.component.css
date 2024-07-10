@@ -1,61 +1,98 @@
 .service-detail {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .service-detail img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .service-detail h1 {
-    font-size: 24px;
-    margin: 20px 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; /* Ajusta el tamaño según sea necesario */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-  
-  .detail-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-  }
-  
-  .detail-info label {
-    font-weight: bold;
-  }
-  
-  .service-detail h2 {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  
-  .service-detail ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .service-detail li {
-    background: #f9f9f9;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-  }
-  
-  .service-detail button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .service-detail button:hover {
-    background: #0056b3;
-  }
-  
+.info-box {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.consultation-box {
+  flex: 1;
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.service-detail img {
+  width: 100%;
+  height: auto;
+}
+
+.service-detail h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.detail-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.detail-info label {
+  font-weight: bold;
+}
+
+.service-detail h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.service-detail ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-detail li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+}
+
+.consultation-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.consultation-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25D366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+  background: #1EBE5C;
+}
+
+.service-detail button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.service-detail button:hover {
+  background: #0056b3;
+}
