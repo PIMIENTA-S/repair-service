@@ -63,12 +63,12 @@ export class HomeComponent implements OnInit{
     {
       title: 'Reprogramación de centralitas',
       img: 'assets/centralitas.png',
-      text: 'Consultar acerca de los problemas o fallas más frecuentes en la programación de centralitas.'
+      text: 'Consultar acerca de los problemas más frecuentes en la programación de centralitas.'
     },
     {
-      title: 'Reparación de centralitas',
+      title: 'Reparación de <> centralitas',
       img: 'assets/archivo.png',
-      text: 'Consultar acerca de las fallas comunes en que se pueden producir en centralitas.'
+      text: 'Fallas comunes que se pueden presentar en centralitas.'
     },
     {
       title: 'Reparación cuadro de instrumentos',
