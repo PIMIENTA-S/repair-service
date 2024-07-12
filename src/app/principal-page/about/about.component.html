@@ -7,8 +7,8 @@
 <div class="body py-4">
     <div class="container">
         <!-- Sección de la Empresa -->
-        <div class="row mb-5 align-items-center">
-            <div class="col-lg-8">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
                 <h2 class="text-uppercase font-weight-bold mb-3">La Empresa</h2>
                 <p class="text-justify">
                     Por medio de la remanufacturación, ofrecemos la posibilidad de soluciones asequibles para componentes electrónicos, para que la conducción sea aún accesible para todos. Al utilizar la remanufacturación, también se reduce el uso innecesario de piezas nuevas.
@@ -16,17 +16,11 @@
                     En los últimos años, el conocimiento ha aumentado y ahora tenemos 7 años de experiencia en reparaciones de calidad de componentes electrónicos de automóviles.
                 </p>
             </div>
-            <div class="col-lg-4">
-                <img class="img-fluid rounded block" src="assets/Ion/ion_g.png" alt="Imagen de la empresa">
-            </div>
         </div>
-
+        
         <!-- Sección de Soluciones Cualitativas y Duraderas -->
-        <div class="row mb-5 align-items-center">
-            <div class="col-lg-4">
-                <img class="img-fluid rounded shadow-sm block" src="assets/Ion/ion-5.jpg" alt="Imagen de soluciones">
-            </div>
-            <div class="col-lg-8">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
                 <h2 class="text-uppercase font-weight-bold mb-3">Soluciones Cualitativas y Duraderas</h2>
                 <p class="text-justify">
                     La posibilidad de proporcionar una nueva vida a productos defectuosos, contribuye a una economía sustentable y circular. En un mundo donde hay una demanda creciente de soluciones duraderas por parte de los consumidores. La legislación y las regulaciones. Con nuestra reparación una solución para la reutilización de componentes electrónicos defectuosos en la industria automotriz.
@@ -35,8 +29,8 @@
         </div>
 
         <!-- Sección de Innovación -->
-        <div class="row mb-5 align-items-center">
-            <div class="col-lg-8">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
                 <h2 class="text-uppercase font-weight-bold mb-3">La Innovación es Nuestra Fuerza</h2>
                 <p class="text-justify">
                     Contamos con instalaciones y equipos avanzados que a menudo se diseñan internamente para poder realizar remanufacturaciones. No solo queremos reparar, sino también realizar mejoras estructurales siempre que sea posible. Con mejor calidad y una vida más larga como resultado. Para este fin, una serie de valores fundamentales se aplican a nosotros:
@@ -48,17 +42,23 @@
                     <li>Tiempo estimado de reparación de 48 horas.</li>
                 </ul>
             </div>
-            <div class="col-lg-4">
-                <img class="img-fluid rounded shadow-sm block" src="assets/Ion/ion-4.jpg" alt="Imagen de innovación">
+        </div>
+
+        <!-- Sección de Galería -->
+        <div class="gallery mb-5">
+            <h2 class="text-center text-uppercase font-weight-bold mb-4">Galería</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4" *ngFor="let image of images">
+                    <div class="gallery-item">
+                        <img class="block img-fluid rounded shadow-sm" [src]="image.src">
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Sección de Contacto -->
-        <div class="row mb-5 align-items-center">
-            <div class="col-lg-4">
-                <img class="img-fluid rounded shadow-sm block" src="assets/Ion/ion-6.jpg" alt="Imagen de contacto">
-            </div>
-            <div class="col-lg-8 mt-3">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
                 <h2 class="text-uppercase font-weight-bold mb-3">¿Buscas una Solución para tus Componentes?</h2>
                 <p class="text-justify">
                     ¿Deseas reparar las unidades de ABS o ECU, los cuadros de instrumentos y los cuerpos del acelerador/mariposa?
