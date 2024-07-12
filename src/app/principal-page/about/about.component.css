@@ -1,26 +1,17 @@
 .sub-header {
-    width: 100%;
     background-color: #000;
-    height: 200px;
     color: #fff;
-}
-
-.sub-header .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 5rem 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
-.sub-header .container h1 {
-    font-size: 40px;
+.sub-header h1 {
+    font-size: 2.5rem;
 }
 
 .body {
-    padding: 20px 0;
-    width: 80%;
-    margin:auto;
+    padding: 1.5rem 0;
 }
 
 .page {
@@ -29,63 +20,20 @@
     padding: 4% 0;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-
-}
-
-.gallery h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 1px;
-}
-
-.gallery-item {
-    width: 30%;
-    margin: 10px;
-    text-align: center;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-@keyframes appear{
-    from{
+@keyframes appear {
+    from {
         opacity: 0;
-        scale: 0.5;
+        transform: scale(0.5);
     }
-    to{
+    to {
         opacity: 1;
-        scale: 1;
+        transform: scale(1);
     }
-}
-
-.block{
-    animation: appear 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0;
 }
 
 .block {
-    -webkit-animation: appear 1s ease-out forwards;
-    -moz-animation: appear 1s ease-out forwards;
-    -o-animation: appear 1s ease-out forwards;
     animation: appear 1s ease-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0;
 }
-
-
 
 @media screen and (max-width: 900px) {
     .page {
@@ -98,10 +46,26 @@
 }
 
 @media screen and (max-width: 600px) {
-    .body{
+    .body {
         width: 95%;
     }
+
     .gallery-item {
         width: 80%;
     }
+}
+
+.img-fluid {
+    max-height: 300px; /* Ajusta esta altura según tus necesidades */
+    width: 400px;
+    object-fit: cover; /* Mantiene las proporciones de la imagen */
+}
+
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-justify {
+    text-align: justify;
 }
