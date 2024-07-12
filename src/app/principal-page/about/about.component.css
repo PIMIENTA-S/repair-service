@@ -17,27 +17,17 @@
 
 .block {
     animation: appear 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .img-fluid {
-    max-height: 300px; /* Ajusta esta altura según tus necesidades */
-    min-width: 400px;
+    max-height: 400px; /* Ajusta esta altura según tus necesidades */
+    width: 400px;
     object-fit: cover; /* Mantiene las proporciones de la imagen */
-    margin: auto;
 }
 
-.row.align-items-center {
-    display: flex;
-    align-items: center;
-}
 
 .text-justify {
     text-align: justify;
 }
-/* 
-@media (max-width: 900px) {
-    .img-fluid {
-        width: 200px;
-    }
-    
-} */
