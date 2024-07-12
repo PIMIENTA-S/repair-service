@@ -1,21 +1,8 @@
-.sub-header{
-  width: 100%;
-  background-color: #000;
-  height: 200px;
-  color: #fff;
-  margin-bottom: 20px;
+.sub-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-.sub-header .sub-header-text {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-.sub-header .sub-header-text h1 {
-  font-size: 40px;
-}
 .body {
   width: 85%;
   margin: auto;
