@@ -8,7 +8,7 @@ import { SERVICES } from '../data/data';
 })
 export class ServiceService {
   private services: Service[] = SERVICES;
-  private servicesH : Service[] =[]
+  private servicesH : Service[] = []
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class ServiceService {
   };
 
   getServicesHome(): Service[] {
-    const indexSelect = [2,5,6,7,8,1,2,4,5,8,9,10]
+    const indexSelect = [2,15,6,7,8,1,2,4,5,8,9,10]
     this.servicesH = indexSelect.map(index => this.services[index])
     return this.servicesH
   };
