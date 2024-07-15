@@ -1,7 +1,7 @@
 .service-detail {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; /* Ajusta el tamaño según sea necesario */
+  max-width: 1200px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ddd;
@@ -68,33 +68,30 @@
   margin-bottom: 20px;
 }
 
-.whatsapp-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #25D366;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.whatsapp-button:hover {
-  background: #1EBE5C;
-}
-
 .service-detail button {
   display: block;
   width: 100%;
   padding: 10px;
-  background: #007bff;
   color: white;
   border: none;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.service-detail button:hover {
+.service-detail .btt-blue{
+  background: #007bff;
+}
+
+.service-detail .btt-blue:hover{
   background: #0056b3;
+}
+
+.whatsapp-button {
+  background: #25D366;
+}
+
+.whatsapp-button:hover {
+  background: #1EBE5C;
 }
 
 @media (max-width: 768px) {

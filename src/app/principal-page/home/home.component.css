@@ -51,8 +51,9 @@ p {
     transition: 0.5s;
 }
 .btn-know:hover {
-    background: #f44336;
-    border-color: #f44336;
+    background: #198754;
+    border-color: #198754;
+    color: #fff;
 }
 
 
