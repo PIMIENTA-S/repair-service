@@ -1,5 +1,5 @@
 <nav>
-    <a href="/"><img src="assets/Ion/ion_g.png"></a>
+    <a routerLink="/"><img src="assets/Ion/ion_g.png"></a>
     <div class="nav-links" [ngStyle]="{'right': isMenuOpen ? '0' : '-200px'}">
         <fa-icon [icon]="icon.faTimes" (click)="toggleMenu()" class="fa"></fa-icon>
         
@@ -13,8 +13,9 @@
     <fa-icon [icon]="icon.faBars" (click)="toggleMenu()" class="fa"></fa-icon>
     
 </nav>
-
 <router-outlet></router-outlet>
 
+
+<share-btn></share-btn>
 <shared-footer></shared-footer>
 

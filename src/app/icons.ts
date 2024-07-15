@@ -1,6 +1,6 @@
 import { faBars, faTimes, faEnvelope, faPhone, faStar, faMoneyCheckDollar, faCalendar, faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export const icon = {
     faBars,
@@ -15,5 +15,6 @@ export const icon = {
     
     faFacebook,
     faTwitter,
-    faInstagram
+    faInstagram,
+    faWhatsapp
 }
