@@ -22,9 +22,9 @@
 }
 
 .img-fluid {
-    max-height: 400px; /* Ajusta esta altura según tus necesidades */
+    max-height: 400px;
     width: 400px;
-    object-fit: cover; /* Mantiene las proporciones de la imagen */
+    object-fit: cover;
 }
 
 

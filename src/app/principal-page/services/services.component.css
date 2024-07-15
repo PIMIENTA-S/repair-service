@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   gap: 20px;
   margin: 20px auto;
-  justify-content: space-between; /* Ajuste para espaciar los elementos de manera uniforme */
+  justify-content: flex-start; /* Ajuste para espaciar los elementos de manera uniforme */
 }
 
 .service-item {

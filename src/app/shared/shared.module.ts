@@ -5,6 +5,8 @@ import { FooterComponent } from './footer/footer.component';
 import { InfoComponent } from './info/info.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ServicesComponent } from './services/services.component';
+import { BtnWhatsappComponent } from './btn-whatsapp/btn-whatsapp.component';
+import { ContactBarComponent } from './contact-bar/contact-bar.component';
 
 
 
@@ -14,6 +16,8 @@ import { ServicesComponent } from './services/services.component';
     InfoComponent,
     TestimonialsComponent,
     ServicesComponent,
+    BtnWhatsappComponent,
+    ContactBarComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,8 @@ import { ServicesComponent } from './services/services.component';
     FooterComponent,
     InfoComponent,
     TestimonialsComponent,
-    ServicesComponent
+    ServicesComponent,
+    BtnWhatsappComponent
   ]
 })
 export class SharedModule { }
