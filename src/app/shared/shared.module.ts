@@ -28,7 +28,8 @@ import { ContactBarComponent } from './contact-bar/contact-bar.component';
     InfoComponent,
     TestimonialsComponent,
     ServicesComponent,
-    BtnWhatsappComponent
+    BtnWhatsappComponent,
+    ContactBarComponent
   ]
 })
 export class SharedModule { }
