@@ -16,5 +16,5 @@ export const icon = {
     faFacebook,
     faTwitter,
     faInstagram,
-    faWhatsapp
+    faWhatsapp,
 }
