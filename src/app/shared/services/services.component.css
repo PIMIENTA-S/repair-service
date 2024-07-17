@@ -27,7 +27,7 @@ p {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .quality-row:hover {
@@ -38,21 +38,12 @@ p {
     font-size: 40px;
     color: #007BFF;
 }
-@media (max-width: 1000px) {
-    .quality-row {
-        flex: 0 1 48%;
-    }
-}
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
     .row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-    }
-
-    .quality-row {
-        margin:0;
     }
 }
 
@@ -62,6 +53,7 @@ p {
     }
 
     .quality-row {
+        flex: 1 1 100%;
         width: 100%;
         margin: 5px 0;
     }
