@@ -11,7 +11,6 @@ import { SharedModule } from '../shared/shared.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceDetailComponent } from './services-detail/services-detail.component';
-import { AppModule } from '../app.module';
 import { LazyLoadDirective } from './lazy-load.directive';
 
 
