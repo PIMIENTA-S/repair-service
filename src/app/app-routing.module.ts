@@ -7,6 +7,7 @@ import { ContactComponent } from './principal-page/contact/contact.component';
 import { NotFoundComponent } from './principal-page/not-found/not-found.component';
 import { ServicesComponent } from './principal-page/services/services.component';
 import { ServiceDetailComponent } from './principal-page/services-detail/services-detail.component';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,8 +25,10 @@ const routerOptions: ExtraOptions = {
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes, routerOptions)],
   
-  exports: [RouterModule]
+  exports: [RouterModule,]
 })
 export class AppRoutingModule { }
