@@ -23,9 +23,7 @@ export class ServiceDetailComponent implements OnInit {
 
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-        }, 100);
+        window.scrollTo(0, 0);
       }
     });
 
