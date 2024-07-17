@@ -1,9 +1,8 @@
 <shared-contact></shared-contact>
 <nav>
     <a routerLink="/"><img src="assets/Ion/ion_g.png"></a>
-    <div class="nav-links" [ngStyle]="{'right': isMenuOpen ? '0' : '-200px'}">
-        <fa-icon [icon]="icon.faTimes" (click)="toggleMenu()" class="fa"></fa-icon>
-        
+    <div class="nav-links" [ngClass]="{'menu-open': isMenuOpen}">
+        <fa-icon [icon]="icon.faTimes" (click)="toggleMenu()" class="fa fa-times"></fa-icon>
         <ul>
             <li (click)="toggleMenu()"><a routerLink="/">Home</a></li>
             <li (click)="toggleMenu()"><a routerLink="/services">Servicios</a></li>
@@ -11,12 +10,9 @@
             <li (click)="toggleMenu()"><a routerLink="/contact">Contacto</a></li>
         </ul>
     </div>
-    <fa-icon [icon]="icon.faBars" (click)="toggleMenu()" class="fa"></fa-icon>
-    
+    <fa-icon [icon]="icon.faBars" (click)="toggleMenu()" class="fa fa-bars"></fa-icon>
 </nav>
 <router-outlet></router-outlet>
 
-
 <share-btn></share-btn>
 <shared-footer></shared-footer>
-
