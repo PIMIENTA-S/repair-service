@@ -40,10 +40,10 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     FontAwesomeModule,
-    SharedModule,
+    SharedModule
   ],
   exports:[
-    HomeComponent
+    HomeComponent,
   ]
 })
 export class PrincipalPageModule { }

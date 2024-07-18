@@ -22,10 +22,10 @@
   </div>
 </div>
 
-<div class="col container text-center my-4" lazyLoad>
+<div class="col container text-center my-4"lazyLoad>
   <h1 class="display-4">Reparaciones Destacadas</h1>
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 mt-4 repair-container">
-    <div class="col repair-col" *ngFor="let facility of facilities" (click)="viewDetails(facility)">
+    <div class="col repair-col" *ngFor="let facility of facilities" (click)="viewDetails(facility)" lazyLoad>
       <div class="card h-100">
         <img [src]="facility.image" class="card-img-top" alt="">
         <div class="card-body">
