@@ -22,41 +22,8 @@ export class HomeComponent implements OnInit{
     private router: Router,
   ){}
 
-  section1Loaded = false;
-  section2Loaded = false;
-  section3Loaded = false;
-  section4Loaded = false;
-  section5Loaded = false;
-  section6Loaded = false;
-
   ngOnInit(): void {
     this.facilities = this.serviceService.getServicesHome();
-    setTimeout(() => this.section1Loaded = true, 500);
-    setTimeout(() => this.section2Loaded = true, 1000);
-    setTimeout(() => this.section3Loaded = true, 2000);
-    setTimeout(() => this.section4Loaded = true, 2000);
-    setTimeout(() => this.section5Loaded = true, 2500);
-    setTimeout(() => this.section6Loaded = true, 3000);
-  }
-
-  loadContent(section: string) {
-    switch(section) {
-      case 'section2':
-        this.section2Loaded = true;
-        break;
-      case 'section3':
-        this.section3Loaded = true;
-        break;
-      case 'section4':
-        this.section4Loaded = true;
-        break;
-      case 'section5':
-        this.section5Loaded = true;
-        break;
-      case 'section6':
-        this.section6Loaded = true;
-        break;
-    }
   }
 
   services = [

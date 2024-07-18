@@ -1,12 +1,12 @@
 <section class="content d-flex justify-content-center align-items-center text-white text-center mb-4" style="background-image: url(/assets/repair.jpg); height: 500px;">
-  <div class="text-box hidden position-absolute w-100" appLazyLoad (appLazyLoad)="loadContent('section1')" [class.loaded]="section1Loaded" [ngClass]="{'animate__animated': section1Loaded, 'animate__fadeInUp': section1Loaded}">
+  <div class="text-box position-absolute w-100"  lazyLoad>
     <h1 class="display-1">ION <br> AUTOTRONICA</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ipsam non ut iure sunt porro perspiciatis libero debitis voluptatum ipsum nemo eum itaque, laboriosam magnam <br> autem labore, nihil voluptates tempore.</p>
     <a href="#contact" class="btn btn-outline-light btn-know">Consultar</a>
   </div>
 </section>
 
-<div class="col hidden container text-center my-4" appLazyLoad (appLazyLoad)="loadContent('section2')" [class.loaded]="section2Loaded" [ngClass]="{'animate__animated': section2Loaded, 'animate__fadeInLeft': section2Loaded}">
+<div class="col container text-center my-4" lazyLoad>
   <h1 class="display-4 mb-5">Servicio de reparación</h1>
   <div class="row mt-4">
     <div class="col-md-4 mb-4" *ngFor="let service of services">
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<div class="col hidden container text-center my-4" appLazyLoad (appLazyLoad)="loadContent('section3')" [class.loaded]="section3Loaded" [ngClass]="{'animate__animated': section3Loaded, 'animate__fadeInRight': section3Loaded}">
+<div class="col container text-center my-4" lazyLoad>
   <h1 class="display-4">Reparaciones Destacadas</h1>
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4 mt-4 repair-container">
     <div class="col repair-col" *ngFor="let facility of facilities" (click)="viewDetails(facility)">
@@ -36,8 +36,8 @@
   </div>
 </div>
 
-<share-info id="contact" class="hidden container text-center my-4" appLazyLoad (appLazyLoad)="loadContent('section4')" [class.loaded]="section4Loaded" [ngClass]="{'animate__animated': section4Loaded, 'animate__fadeInDown': section4Loaded}"></share-info>
+<share-info id="contact" class="container text-center my-4" lazyLoad></share-info>
 
-<shared-services class="hidden container text-center my-4" appLazyLoad (appLazyLoad)="loadContent('section5')" [class.loaded]="section5Loaded" [ngClass]="{'animate__animated': section5Loaded, 'animate__fadeInUp': section5Loaded}"></shared-services>
+<shared-services class="container text-center my-4" lazyLoad></shared-services>
 
-<shared-testimonials class="hidden container text-center my-4" appLazyLoad (appLazyLoad)="loadContent('section6')" [class.loaded]="section6Loaded" [ngClass]="{'animate__animated': section6Loaded, 'animate__bounceIn': section6Loaded}"></shared-testimonials>
+<shared-testimonials class="container text-center my-4" lazyLoad></shared-testimonials>

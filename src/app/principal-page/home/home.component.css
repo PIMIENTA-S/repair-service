@@ -1,9 +1,11 @@
-.hidden {
-    visibility: hidden;
+.lazy-load-hidden {
+    transform: translateY(-40px);
+    opacity: 0;
 }
 
-.loaded {
-    visibility: visible;
+.visible {
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 h1 {
