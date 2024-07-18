@@ -3,6 +3,16 @@
     font-weight: 600;
 }
 
+.lazy-load-hidden {
+    transform: translateY(-40px);
+    opacity: 0;
+}
+
+.visible {
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
 
 @keyframes appear {
     from {
